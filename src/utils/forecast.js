@@ -12,7 +12,7 @@ const forecast = (latitude, longitude, callback) => {
         } else {
             const { summary } = body.daily.data[0];
             const {precipProbability,temperature} = body.currently;
-            callback(undefined, summary + 'The temperature is '+ temperature + ' there are ' + precipProbability + '% chance of rain')
+            callback(undefined, summary + 'Temperature sumary :The temperature is '+ temperature + ' there are ' + precipProbability + '% chance of rain')
         }
     });
 };
